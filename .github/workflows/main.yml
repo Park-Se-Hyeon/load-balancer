@@ -8,7 +8,9 @@ jobs:
   build-docker-image:
     runs-on: ubuntu-latest
     steps:
-      - run: echo '이미지 빌드'
+      - name : 이미지 빌드 단게
+      - run: echo '이미지 빌드 1단계'
+      - run: echo '이미지 빌드 2단계'
   
   deploy:
     needs: build-docker-image
